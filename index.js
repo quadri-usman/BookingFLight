@@ -8,7 +8,7 @@ const app = express();
 app.use(json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
-app.use("/flight", flight);
+app.use("api/flight", flight);
 
 const port = process.env.PORT || 3000;
 
